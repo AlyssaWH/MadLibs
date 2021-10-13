@@ -71,7 +71,12 @@ def show_madlib():
      noun = request.args.get("Noun")
      adjective = request.args.get("Adjective")
 
-     return render_template("madlib.html", Person = person, Color = color, Noun = noun, Adjective = adjective)
+     adverb = request.args.get("adverb")
+     noun2 = request.args.get("noun2")
+     city = request.args.get("city")
+
+
+     return render_template("madlib.html", Person = person, Color = color, Noun = noun, Adjective = adjective, adverb = adverb, noun2 = noun2, city = city)
 
 
 
